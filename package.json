@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "test",
-    "start": "NODE_ENV=development NODE_PATH=. node index.js",
-    "start-prod": "NODE_ENV=production NODE_PATH=. node index.js",
+    "start": "NODE_ENV=development NODE_PATH=. pm2 start index.js --name orlandowebspecialist",
+    "start-prod": "NODE_ENV=production NODE_PATH=. pm2 start index.js --name orlandowebspecialist",
+    "stop" :  "pm2 stop orlandowebspecialist",
     "watch": "(less-watch-compiler &) && ./node_modules/.bin/webpack --watch"
   },
   "keywords": [
