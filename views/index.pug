@@ -1,0 +1,165 @@
+extends layouts/page.pug
+block content
+
+  div.container.intro
+
+    div.spacer.vh
+      div.nav
+        a(href="/#talents") Talents 
+        a(href="/#contact") Contact Me 
+
+      h1.headline.hook STARTING A BRAND?
+
+    div.content-wrapper
+
+      h1.headline.call LETS TEAM UP
+
+      p.slugline
+        |Jeff Straney -
+        |Web Developer
+        |Orlando, FL.
+
+    div.screen.flowers
+    div.spacer
+    div.spacer
+
+  div.container.mission
+
+    div.spacer
+    div.spacer
+
+    div.content-wrapper
+
+      h2 DESIGN DRIVEN SOLUTIONS 
+
+      p
+        | My mission Is providing you with the absolute best experience
+        | from product concept to delivery.
+        | Your vision is important and I will dedicate my
+        | time to help you realize it.
+
+    div.screen
+    div.spacer
+    div.spacer
+
+  div.container.persuasion
+
+    div.spacer
+    div.spacer
+
+    h2 BRANDING AND DESIGN 
+
+    p
+      | Initiates new customer relationships. What will convince 
+      | a visitor to commit to your brand and possibly advocate it?
+      | A clean, discoverable, and usable website is the
+      | strongest medium to communicate brand, second only to the
+      | product itself.
+
+    div.screen
+    div.spacer
+    div.spacer
+
+  div#talents.container.talents
+
+    div.spacer
+
+    div.content-wrapper
+
+      h2 EXCEPTIONAL WEB DEVELOPMENT
+
+      p
+        | Here are some of the talents that I am offering. For a complete resume
+        | go 
+        a(href="/cv") here
+        |, or visit my 
+        a(href="https://github.com/jstraney") Github account 
+        | if you would like a code sample. I have many specialities, so back-end
+        | development is also within my wheelhouse.
+
+      div.aggregate.talents
+        div(title="excellent with nodejs").excellent.talent.nodejs Node.js
+        div(title="excellent with react").excellent.talent.react React 
+        div(title="excellent with express").excellent.talent.react Express
+        div(title="excellent with drupal").excellent.talent.drupal Drupal
+        div(title="excellent with CSS3").excellent.talent.css-3 CSS3 
+        div(title="excellent with HTML5").excellent.talent.html-5 HTML5
+        div(title="excellent in php").excellent.talent.php PHP
+        div(title="great with postgresql").great.talent.sql PGSQL
+        div(title="great with mysql").great.talent.sql MySQL 
+        div(title="great with solr").great.talent.solr Solr
+        div(title="great in git").great.talent.git Git
+        div(title="great in jira").great.talent.jira Jira
+        div(title="great in shell").great.talent.shell Shell Scripting
+        div(title="great in python").great.talent.python Python
+        div(title="good in java").good.talent.java Java
+        div(title="good in C").good.talent.java C
+
+      div.legend
+        span.key.excellent 
+          span.swatch
+          span Excellent
+        span.key.great 
+          span.swatch
+          span Great
+        span.key.good 
+          span.swatch
+          span Good 
+
+    div.screen
+
+    div.spacer
+
+  div#contact.container.contact
+
+    div.spacer
+
+    div.content-wrapper
+
+      h2 Web Developer Contact 
+
+      p
+        | If you would like a free consultation, please contact me.
+        | Cost will vary depending on the scope and complexity of your 
+        | project, but I offer flexibility on pricing.
+
+      div.portrait
+        img(src="/images/jeff.png")
+
+      div.info
+
+        h4 Information 
+
+        div.field Jeff Straney
+
+        div.field
+          // here, I am using a technique to prevent
+          // most web scrapers from ripping my email and
+          // phone number. still vulnerable to headless browser
+          // using OCR
+          span.demon-begone(aria-hidden=true) †††
+          span 35
+          span.demon-begone(aria-hidden=true) †††
+          span 2-
+          span.demon-begone(aria-hidden=true) †††
+          span 45
+          span.demon-begone(aria-hidden=true) †††
+          span 4-76
+          span.demon-begone(aria-hidden=true) †††
+          span 65
+
+        div.field
+          span.demon-begone(aria-hidden=true) †††
+          span straneyjeff
+          span.demon-begone(aria-hidden=true) †††
+          span @
+          span.demon-begone(aria-hidden=true) †††
+          span gma
+          span.demon-begone(aria-hidden=true) †††
+          span il.com
+
+    div.screen
+
+    div.spacer
+    div.spacer
+

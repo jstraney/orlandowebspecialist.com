@@ -1,0 +1,11 @@
+doctype html
+html(lang="en")
+  head
+    include regions/head.pug
+  body(class=(contentClass||''))
+    div#header
+      include regions/header.pug
+    div#content
+      block content
+    div#footer
+      include regions/footer.pug

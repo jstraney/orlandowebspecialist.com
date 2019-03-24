@@ -1,0 +1,50 @@
+{
+  "name": "orlandowebspecialist.com",
+  "version": "1.0.0",
+  "description": "personal webpage for web development freelance",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "NODE_ENV=development NODE_PATH=. node index.js",
+    "start-prod": "NODE_ENV=production NODE_PATH=. node index.js",
+    "watch": "(less-watch-compiler &) && ./node_modules/.bin/webpack --watch"
+  },
+  "keywords": [
+    "web",
+    "specialist",
+    "developer",
+    "php",
+    "python",
+    "orlando"
+  ],
+  "author": "Jeff Straney <straneyjeff@gmail.com> (http://www.orlandowebspecialist.com)",
+  "license": "ISC",
+  "dependencies": {
+    "connect-redis": "3.4.0",
+    "dotenv": "7.0.0",
+    "express": "4.16.4",
+    "helmet": "3.16.0",
+    "pg-promise": "8.5.4",
+    "pug": "2.0.3",
+    "react": "16.7.0",
+    "react-dom": "16.7.0",
+    "redis": "2.8.0",
+    "three": "0.101.1"
+  },
+  "devDependencies": {
+    "@babel/core": "7.2.2",
+    "@babel/polyfill": "7.2.5",
+    "@babel/preset-env": "7.2.3",
+    "@babel/preset-react": "7.0.0",
+    "babel-loader": "8.0.5",
+    "css-loader": "2.1.0",
+    "file-loader": "3.0.1",
+    "raf": "3.4.1",
+    "style-loader": "0.23.1",
+    "uglifyjs-webpack-plugin": "2.1.1",
+    "url-loader": "1.1.2",
+    "webpack": "4.28.4",
+    "webpack-cli": "3.2.1",
+    "webpack-dev-server": "3.1.14"
+  }
+}

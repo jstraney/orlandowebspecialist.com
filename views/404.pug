@@ -1,0 +1,13 @@
+extends layouts/page.pug
+block content
+  div.small.container
+    h2 Page Not Found
+
+    //- use the canonical message if we have it, otherwise
+    //- consider if a vendor error is thrown. It could be really
+    //- ugly or scary, so 404 is just fine here.
+    if error && canonical.error_codes[error.code]
+      p=canonical.error_codes[error.code]
+
+    p We're very sorry about that! Try the 
+      a(href=site_root) home page

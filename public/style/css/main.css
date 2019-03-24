@@ -1,0 +1,389 @@
+/** Gray Scale **/
+/** Brand Colors **/
+/** Color Codes**/
+.demon-begone {
+  font-size: 0;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+  supported by Chrome and Opera */
+}
+.half {
+  display: inline-block;
+  vertical-align: top;
+  width: 46%;
+  margin-right: 2%;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.third {
+  width: 29%;
+  padding: 0.5em 2%;
+}
+body.index h1,
+body.index h2,
+body.index h3,
+body.index h4,
+body.index h5,
+body.index h6,
+body.index p {
+  max-width: 768px;
+  margin-left: auto;
+  margin-right: auto;
+}
+div.screen,
+div.wow,
+div.background {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.screen {
+  background-color: #888888;
+}
+.intro .screen.flowers {
+  background-image: linear-gradient(#101713 2%, rgba(0, 0, 0, 0) 50%), url("/images/flowers.jpg");
+}
+.mission {
+  color: #222222;
+}
+.content-wrapper {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.mission .screen {
+  background-color: #101713;
+  background-image: url("/images/stairs.jpg");
+  background-attachment: inherit;
+  background-position: center;
+  background-size: cover;
+}
+.persuasion .screen {
+  background-image: url("/images/gold.jpg");
+}
+.legend .key {
+  display: inline-block;
+  vertical-align: text-top;
+  margin-right: 1em;
+}
+.swatch {
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: text-top;
+  width: 1em;
+  height: 1em;
+}
+.excellent .swatch {
+  background-color: #49B310;
+}
+.great .swatch {
+  background-color: #0F8A2D;
+}
+.good .swatch {
+  background-color: #07480C;
+}
+.talents a,
+.talents a:active,
+.talents a:visited,
+.talents a:link {
+  color: #555555;
+}
+.talents a:hover {
+  color: #888888;
+}
+.talents .screen {
+  background-image: url("/images/clouds.jpg");
+  background-color: #4896b4;
+  background-size: cover;
+  background-position: top center;
+  background-attachment: inherit;
+}
+.contact .screen {
+  background-color: #4896b4;
+}
+.spacer {
+  height: 10vw;
+}
+.spacer.vh {
+  height: 100vh;
+}
+.intro .nav {
+  text-align: right;
+  font-size: 1.1rem;
+}
+.nav a {
+  margin-right: 1em;
+}
+.container {
+  padding: 1em 3em;
+  position: relative;
+}
+.container.med {
+  position: relative;
+  margin: 0 auto;
+}
+.headline {
+  font-size: 3em;
+}
+.headline,
+.slugline {
+  text-align: center;
+}
+.headline.hook {
+  margin-top: 30vh;
+}
+.slugline {
+  font-size: 1.3em;
+}
+.legend,
+.aggregate {
+  margin: 0 auto 1em;
+}
+.legend {
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+.aggregate .talent {
+  display: inline-block;
+  width: 16%;
+  text-align: center;
+  padding: 0.5em 2%;
+  margin: 0.5em 4% 0.5em 0;
+  vertical-align: top;
+  border-radius: 4px;
+  font-size: 0.8em;
+}
+.talent.excellent {
+  background-color: #49B310;
+}
+.talent.great {
+  background-color: #0F8A2D;
+}
+.talent.good {
+  background-color: #07480C;
+}
+.portrait,
+.contact .info {
+  width: 48%;
+  margin-right: 2%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 1em;
+  border-radius: 4px;
+  height: 275px;
+  border: 1px solid #FFFFFF;
+  border-bottom: 4px double #FFFFFF;
+}
+.portrait {
+  max-width: 300px;
+  overflow: hidden;
+}
+.portrait img {
+  position: relative;
+  top: -30px;
+}
+.contact .info {
+  background-color: #4896b4;
+  padding: 1em;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  border-bottom: 4px double #FFFFFF;
+}
+.info .field {
+  margin-bottom: 0.5em;
+}
+.portrait img {
+  display: block;
+  height: 405px;
+}
+#talents a {
+  color: #CB1080;
+}
+#talents p {
+  padding: 1em 0.5em;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+#talents canvas {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 768px) {
+  .headline {
+    font-size: 2em;
+  }
+  .container {
+    padding: 1em;
+  }
+  .aggregate .talent {
+    width: 29%;
+    font-size: 0.7em;
+  }
+  .slugline {
+    font-size: inherit;
+  }
+  .portrait,
+  .contact .info {
+    width: 98%;
+    height: 320px;
+    margin: 0.5em auto;
+    display: block;
+  }
+  .portrait img {
+    margin: 0 auto;
+  }
+}
+body.example-page {
+  background-color: #4896b4;
+}
+canvas {
+  width: 100%;
+}
+body.example-page a {
+  color: #FFFFFF;
+}
+body.example-page a:hover {
+  color: #14275a;
+}
+.gallery-thumbnail {
+  max-width: 200px;
+  height: 200px;
+}
+.gallery-thumbnail:hover {
+  cursor: pointer;
+}
+.gallery-thumbnail.active {
+  border: 3px solid #14275a;
+  border-radius: 4px;
+}
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-preview .img-wrapper {
+  width: 31%;
+  max-height: 380px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 2%;
+  margin-bottom: 1em;
+}
+.gallery-preview .img-wrapper img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .gallery-preview .img-wrapper {
+    width: 100%;
+    margin-right: 0;
+    max-height: none;
+  }
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #222222;
+  color: #FFFFFF;
+  font-family: helvetica;
+  font-size: 1.3em;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-antialiasing: antialiased;
+  /*background-image: url("/images/home.jpg");*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  line-height: 1.6;
+}
+p {
+  margin-bottom: 2em;
+}
+h1,
+h2,
+h3 {
+  font-size: 2em;
+  font-weight: 200;
+}
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+a,
+a:link,
+a:active,
+a:visited {
+  color: #AAAAAA;
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #888888;
+}
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+.button:hover,
+button:hover,
+input[type=submit]:hover,
+input[type=search]:hover {
+  cursor: pointer;
+}
+.button,
+button,
+input[type=submit],
+input[type=search] {
+  padding: 0.5em;
+  background-color: #4896b4;
+  color: #FFFFFF;
+  display: inline-block;
+  border-radius: 2px;
+  border: none;
+  min-width: 80px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  font-size: 1.1rem;
+}
+.clearfix {
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.6em;
+  }
+}
