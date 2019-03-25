@@ -1,15 +1,12 @@
 import Balloon from './balloon';
 
-const spriteSheet = new Image();
-
 // originally thought about doing react, but this is just
 // too much for what the page accomplishes.
 window.onload = () => {
 
-  const loader = {
-    assets: {spriteSheet: false}
-  }
-
+  // event listeners which create a no-op on inteveral
+  // defined below. prevents page from being flooded with
+  // ballons when its not in use
   let windowFocused = true;
 
   window.addEventListener('blur', () => {
@@ -38,28 +35,35 @@ window.onload = () => {
 
   }
 
+  // reset canvas width + height on resize
   window.addEventListener('resize', resize);
 
+  // do resize once
   resize();
 
+  // animation clock
   let
   then = Date.now(),
   now  = then;
 
+  // all balloons
   const balloons = [];
 
   window.setInterval(() => {
 
+    // if tab is not focused, do nothing
     if (!windowFocused) return;
 
+    // create random x, y for balloon generation
     const
     x = Math.random() * (canvas.width + 32),
     y = canvas.height + 32; 
 
-    // remove balloon
+    // remove balloon if 100 is exceeded
     if (balloons.length > 100)
       balloons.shift();
 
+    // push on new balloon
     balloons.push(new Balloon(x, y));
 
   }, 800);
@@ -68,8 +72,10 @@ window.onload = () => {
 
     now = Date.now() - then;
 
+    // clear the animation frame
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     
+    // update and render all balloons
     balloons.forEach((balloon) => {
 
       balloon.update(now);
@@ -83,5 +89,6 @@ window.onload = () => {
 
   window.requestAnimationFrame && 
     main();
+
 
 };

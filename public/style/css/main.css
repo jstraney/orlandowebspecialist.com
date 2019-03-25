@@ -40,24 +40,42 @@ body.index p {
   margin-left: auto;
   margin-right: auto;
 }
-div.screen,
-div.wow,
-div.background {
+div.screen {
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
+  background-position: top center;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  transform: translateZ(0);
+  will-change: transform;
   z-index: -1;
+}
+a.github {
+  display: inline-block;
+  vertical-align: middle;
+}
+a.github:link,
+a.github:active,
+a.github:visited,
+a.github:hover {
+  text-decoration: none;
+}
+a.github img {
+  width: 2em;
+  height: 2em;
 }
 .screen {
   background-color: #888888;
 }
 .intro .screen.flowers {
   background-image: linear-gradient(#101713 2%, rgba(0, 0, 0, 0) 50%), url("/images/flowers.jpg");
+  position: fixed;
+  top: 0;
+  z-index: -2;
 }
 .mission {
   color: #222222;
@@ -69,9 +87,6 @@ div.background {
 .mission .screen {
   background-color: #101713;
   background-image: url("/images/stairs.jpg");
-  background-attachment: inherit;
-  background-position: center;
-  background-size: cover;
 }
 .persuasion .screen {
   background-image: url("/images/gold.jpg");
@@ -132,6 +147,7 @@ div.background {
 .container {
   padding: 1em 3em;
   position: relative;
+  overflow: hidden;
 }
 .container.med {
   position: relative;
