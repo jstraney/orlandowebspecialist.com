@@ -37,7 +37,7 @@ app.get('/', async (req, res) => {
 
 });
 
-app.get('/cv', async (req, res) => {
+app.get('/resume', async (req, res) => {
 
   const file = fs.createReadStream('./public/cv/jeff_straney_resume.pdf'),
         stat = fs.statSync('./public/cv/jeff_straney_resume.pdf');
