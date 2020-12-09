@@ -7,7 +7,7 @@
     "test": "test",
     "start": "NODE_ENV=development NODE_PATH=. pm2 start index.js --name orlandowebspecialist",
     "start-prod": "NODE_ENV=production NODE_PATH=. pm2 start index.js --name orlandowebspecialist",
-    "stop" :  "pm2 stop orlandowebspecialist",
+    "stop": "pm2 stop orlandowebspecialist",
     "watch": "(less-watch-compiler &) && ./node_modules/.bin/webpack --watch"
   },
   "keywords": [
@@ -24,12 +24,13 @@
     "connect-redis": "3.4.0",
     "dotenv": "7.0.0",
     "express": "4.16.4",
-    "helmet": "3.16.0",
+    "helmet": "^4.2.0",
     "pg-promise": "8.5.4",
     "pug": "2.0.3",
     "react": "16.7.0",
     "react-dom": "16.7.0",
     "redis": "2.8.0",
+    "serialize-javascript": "^3.1.0",
     "three": "0.101.1"
   },
   "devDependencies": {
@@ -42,10 +43,6 @@
     "file-loader": "3.0.1",
     "raf": "3.4.1",
     "style-loader": "0.23.1",
-    "uglifyjs-webpack-plugin": "2.1.1",
-    "url-loader": "1.1.2",
-    "webpack": "4.28.4",
-    "webpack-cli": "3.2.1",
-    "webpack-dev-server": "3.1.14"
+    "url-loader": "1.1.2"
   }
 }
